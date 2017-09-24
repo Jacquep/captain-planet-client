@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Container, Header, Card } from 'semantic-ui-react';
 import Nav from './components/Menu';
 import MapMain from './components/MapMain';
-import About from './About';
+import About from './about';
+import FileDrop from './components/dropzone'
 
 const DataArray = [
 	{
@@ -66,6 +67,7 @@ class Home extends Component {
 							fontSize: '40px',
 						}}
 					>
+					<FileDrop/>
 						Click on location to view wildlife images
 					</Header>
 					<Card.Group itemsPerRow={3} stackable>
